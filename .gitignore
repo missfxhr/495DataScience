@@ -2,3 +2,5 @@
 *.csv
 MapReduceTest/.idea/*
 *.iml
+MapReduceTest/Postgresql2MR_output/*
+MapReduceTest/target/classes/source/*.class
