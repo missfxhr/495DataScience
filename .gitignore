@@ -4,3 +4,4 @@ MapReduceTest/.idea/*
 *.iml
 MapReduceTest/Postgresql2MR_output/*
 *.class
+MapReduceTest/pom.xml
