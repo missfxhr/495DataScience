@@ -26,21 +26,22 @@ public class Postgresql2MR {
         }
 
         //override necessary interface methods
+        @Override
         public void readFields(DataInput in) throws IOException {
             this.id = Text.readString(in);
             this.class_code = in.readInt();
         }
-
+        @Override
         public void write(PreparedStatement stmt) throws SQLException {
             stmt.setString(1, this.id);
             stmt.setInt(2, this.class_code);
         }
-
+        @Override
         public void readFields(ResultSet result) throws SQLException {
             this.id = result.getString(1);
             this.class_code = result.getInt(2);
         }
-
+        @Override
         public void write(DataOutput out) throws IOException {
             Text.writeString(out, this.id);
             out.writeInt(this.class_code);

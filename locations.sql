@@ -16,8 +16,8 @@ CREATE TABLE locations
   location_end_date date,
   class_code integer,
   pbc_code integer,
-  longitude double precision,
   latitude double precision,
+  longitude double precision,
   CONSTRAINT locations_pk PRIMARY KEY (location_id)
 )
 WITH (
